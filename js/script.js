@@ -41,16 +41,16 @@ $(document).ready(function () {
 	//SLIDERS
 
 	$('.intro').slick({
-		prevArrow: '<img src="../images/icons/arrowprev.svg" class="slick-prev"></img>',
-		nextArrow: '<img src="../images/icons/arrownext.svg" class="slick-next"></img>',
+		prevArrow: '<img src="images/icons/arrowprev.svg" class="slick-prev"></img>',
+		nextArrow: '<img src="images/icons/arrownext.svg" class="slick-next"></img>',
 		dots: true,
 		autoplay: true,
 		autoplaySpeed: 2000,
 	});
 
 	$('.examples__slider, .contacts__slider').slick({
-		prevArrow: '<img src="../images/icons/examples-prev.svg" class="slick-prev"></img>',
-		nextArrow: '<img src="../images/icons/examples-next.svg" class="slick-next"></img>',
+		prevArrow: '<img src="images/icons/examples-prev.svg" class="slick-prev"></img>',
+		nextArrow: '<img src="images/icons/examples-next.svg" class="slick-next"></img>',
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		dots: true,
