@@ -1181,6 +1181,38 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  .about__hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  .about__hidden {
+    display: inline;
+  }
+}
+
+.about__hide {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 15px 80px;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  .about__hide {
+    display: none;
+  }
+}
+
 .about__row {
   display: flex;
   max-width: 790px;
@@ -1285,16 +1317,16 @@ body {
   }
 }
 
-#myBtn {
-  margin-bottom: 10px;
-  padding: 15px 80px;
-  font-size: 16px;
-  line-height: 16px;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
-  outline: none;
+@media (min-width: 1201px) {
+  #more {
+    display: inline;
+  }
+}
+
+@media (min-width: 1200px) {
+  #myBtn {
+    display: none;
+  }
 }
 
 .examples {

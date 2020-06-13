@@ -28,6 +28,8 @@ $(document).ready(function () {
 
 	})
 
+	
+
 
 	//BURGER
 
@@ -243,22 +245,23 @@ $(document).ready(function () {
 		}
 	}());
 
+
+	$('.about__hide').click(function(){
+		event.preventDefault();
+		$(this).toggleClass('active')
+		
+		$('.about__hidden').slideToggle(300);
+
+		if ($('.about__hide').hasClass('active')) {
+			$(this).html('Скрыть текст')
+		} else {
+			$(this).html('Показать текст')
+		}
+
+	});
+
 });
 
-//EXPANDED TEXT
 
-function myFunction() {
-	let dots = document.querySelector("#dots");
-	let moreText = document.querySelector("#more");
-	let btnText = document.querySelector("#myBtn");
 
-	if (dots.style.display === "none") {
-		dots.style.display = "inline";
-		btnText.innerHTML = "Раскрыть текст";
-		moreText.style.display = "none";
-	} else {
-		dots.style.display = "none";
-		btnText.innerHTML = "Скрыть текст";
-		moreText.style.display = "inline";
-	}
-}
+
